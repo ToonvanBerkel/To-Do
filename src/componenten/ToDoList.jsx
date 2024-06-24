@@ -1,9 +1,9 @@
 import React from 'react';
-import ToDoItem from './ToDoItem.jsx';
+import ToDoItem from './ToDoItem';
 
 const ToDoList = ({ todos }) => {
     return (
-        <ul>
+        <ul className="mt-4">
             {todos.map((todo, index) => (
                 <ToDoItem key={index} todo={todo} />
             ))}
